@@ -9,6 +9,7 @@
     <%= csp_meta_tag %>
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
+    <meta name="turbolinks-cache-control" content="no-cache" />
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -19,9 +20,15 @@
         <div class="site-wrapper-inner">
 
           <div class="cover-container">
-            <div id="background">
 
-            </div>
+            <%= video_tag(
+                'HardDrivePhotojpeg.mp4',
+                id: 'background',
+                autoplay: true,
+                muted: true,
+                loop: true,
+                poster: 'home_bg.png'
+              ) %>
 
             <%= render "shared/application_nav" %>
 
