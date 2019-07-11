@@ -19,8 +19,9 @@ Bundler.require(*Rails.groups)
 
 module MeshcosPantry
   class Application < Rails::Application
+    config.eager_load_paths << "#{Rails.root}/lib"
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.2
+    # config.load_defaults 5.2
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -28,6 +29,6 @@ module MeshcosPantry
     # the framework and any gems in your application.
 
     # Don't generate system test files.
-    config.generators.system_tests = nil
+    # config.generators.system_tests = nil
   end
 end
