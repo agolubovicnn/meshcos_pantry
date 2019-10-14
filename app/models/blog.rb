@@ -5,9 +5,11 @@ class Blog < ApplicationRecord
 
   validates_presence_of :title, :body
 
-    belongs_to :topic, optional: true
+  belongs_to :topic, optional: true
 
-    def self.special_blogs
-      all
-    end
+  has_many :comments, dependent: :destroy
+
+  def self.special_blogs
+    all
+  end
 end
