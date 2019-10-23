@@ -192,12 +192,19 @@ h6, .h6 {
   font-weight: 700;
 }
 
-.blogcrumb a {
-  font-size: 1.25em;
-  margin: 0px 10px 0px 10px;
+.blogcrumb {
+  background-color: #e6f2ff;
+  a {
+    font-size: 1.25em;
+    margin: 0px 10px 0px 10px;
+  }
 }
 
 .blog-nav {
   margin-bottom: 30px;
-  background-color: #e9ecef;
+  background-color: #e6f2ff;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
 }
