@@ -337,6 +337,7 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
+  aws-sdk-s3
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.0.0.alpha6)
   byebug

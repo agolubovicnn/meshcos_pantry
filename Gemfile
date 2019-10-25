@@ -46,3 +46,4 @@ gem 'redis', '~> 4.0', '>= 4.0.1'
 gem 'redcarpet', '~> 3.5'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 gem 'rails_12factor'
+gem "aws-sdk-s3", require: false
