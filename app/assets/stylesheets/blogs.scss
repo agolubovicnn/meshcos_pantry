@@ -147,6 +147,12 @@ h6, .h6 {
 .blog-post-title {
   margin-bottom: .25rem;
   font-size: 2.5rem;
+  a {
+    color: grey;
+  }
+  a:hover{
+    color: black;
+  }
 }
 .blog-post-meta {
   margin-bottom: 1.25rem;
