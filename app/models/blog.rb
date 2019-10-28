@@ -9,6 +9,10 @@ class Blog < ApplicationRecord
 
   has_many :comments, dependent: :destroy
 
+  def should_generate_new_friendly_id?
+    slug.blank? || title_changed?
+  end
+
   def self.special_blogs
     all
   end
