@@ -15,6 +15,11 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-byebug'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'selenium-webdriver'
 end
 
 group :development do
