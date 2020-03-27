@@ -4,11 +4,11 @@ Feature: Meshco Pantry Welcome page
   So that they have a better experience
 
   Scenario: User sees the welcome message
-    When I go to the homepage
+    Given I go to the homepage
     Then I should see the welcome message
 
   Scenario: User enter the about me page
-    When I go to the homepage
-    And I should see About me link
-    When I click the provided link
+    Given I go to the homepage
+    When I should see About me link
+    And I click the provided link
     Then I should see About Me page

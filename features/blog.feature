@@ -4,24 +4,24 @@ Feature: Meshco Pantry Blog page
   So that they have a better experience
 
 Scenario: User login as admin users
-  When admin user is created
-  And I go to the homepage
+  Given admin user is created
+  When I go to the homepage
   And I click on login link
   And I am on login page
   And I fill in the "Email" and "Password"
   Then I should see Success
 
 Scenario: User login as regular user
-  When user is created
-  And I go to the homepage
+  Given user is created
+  When I go to the homepage
   And I click on login link
   And I am on login page
   And I fill regular user "Email" and "Password"
   Then I should see Success
 
 Scenario: Invalid user login
-  When user is created
-  And I go to the homepage
+  Given user is created
+  When I go to the homepage
   And I click on login link
   And I am on login page
   And I fill in invalid "Email" and "Password"
